@@ -8,8 +8,6 @@ openai = OpenAICompletion()
 
 app = Flask(__name__)
 @app.route('/whatsapp', methods=['POST'])
-
-
 def handle_incoming_messages():
     message = request.form['Body']
     # Generate response with chatbot
